@@ -1,0 +1,12 @@
+generated: '2026-09-22'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://help.ableton.com/hc/en-us/articles/360020431540-Order-flagged-for-security-check
+sources:
+- https://help.ableton.com/hc/en-us/articles/360020431540-Order-flagged-for-security-check
+- https://help.ableton.com/hc/en-us/articles/14523189400092-School-IT-Administration-and-Data-Privacy-FAQ
+standards:
+- id: gdpr
+  conforms: true
+  evidence: The infrastructure for Ableton.com is located in Berlin and therefore covered by GDPR.
+docs: https://help.ableton.com/hc/en-us/articles/360020431540-Order-flagged-for-security-check

@@ -1,23 +1,83 @@
 aid: ableton
+
 name: Ableton
-description: 'Ableton is a company surfaced via the API Evangelist harvest backlog (source: music) and
-  added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/images/og-images/default.83939b540f40.jpg
+
+description: 'Ableton is a Berlin‑based company that creates software, hardware, and learning platforms for music creation and performance. Founded in 1999, Ableton develops the flagship DAW Live, as well as instruments like Push, Move, and Note, and offers extensive educational resources, community support, and a global user base of musicians, producers, and educators.'
+
 url: https://raw.githubusercontent.com/api-evangelist/ableton/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:music
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-22'
+
 modified: '2026-09-22'
+
 tags:
-- Company
-apis: []
+- Music
+- Software
+- Hardware
+- Education
+- Community
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Conformance
+  url: conformance/ableton-conformance.yml
+- type: SecurityTxt
+  url: well-known/ableton-status-security.txt
+- type: WellKnown
+  url: well-known/ableton-well-known.yml
+- type: Hosts
+  url: hosts/ableton-hosts.yml
+- type: Vendors
+  url: vendors/ableton-vendors.yml
+- type: SDKs
+  url: packages/ableton-packages.yml
+- type: Packages
+  url: packages/ableton-packages.yml
+- type: StatusPage
+  url: https://status.ableton.com/
+- type: PrivacyPolicy
+  url: https://www.ableton.com/privacy-policy/
+- type: Newsroom
+  url: https://www.ableton.com/press/
+- type: Login
+  url: https://www.ableton.com/en/login/?next=/
+- type: GitHubOrganization
+  url: https://github.com/Ableton
+- type: DomainSecurity
+  url: security/ableton-domain-security.yml
 - type: Website
-  url: https://ableton.com/
+  url: https://www.ableton.com/
+- type: Documentation
+  url: https://help.ableton.com/hc/en-us
+- type: GettingStarted
+  url: https://www.ableton.com/en/live/learn-live/
+- type: Support
+  url: https://help.ableton.com/hc/en-us
+- type: Blog
+  url: https://www.ableton.com/en/blog/
+- type: Pricing
+  url: https://www.ableton.com/en/shop/
+
+apis: []
+x-enrichment:
+  date: '2026-09-22'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local

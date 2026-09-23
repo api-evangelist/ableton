@@ -1,0 +1,33 @@
+generated: '2026-09-22'
+method: probed
+generator: harvest-packages.py
+source: registry metadata endpoints (registry.npmjs.org, pypi.org, rubygems.org, api.nuget.org, packagist.org, crates.io) ; github.com/Ableton
+ownership_rule: 'official: true only when the registry metadata (homepage, repository, author, URLs) names the provider''s domain (ableton.com,
+  security/ableton-domain-security.yml) or its accepted GitHub org (Ableton).'
+packages:
+- name: ansible-role-prometheus-node-exporter
+  registry: github
+  url: https://github.com/Ableton/ansible-role-prometheus-node-exporter
+  language: Jinja
+  official: true
+  version: null
+  published: '2026-09-08'
+  source_repo: https://github.com/Ableton/ansible-role-prometheus-node-exporter
+  evidence: repository in github.com/Ableton, whose profile names the provider's domain
+- name: ansible-role-jenkins-swarm-client
+  registry: github
+  url: https://github.com/Ableton/ansible-role-jenkins-swarm-client
+  language: Jinja
+  official: true
+  version: null
+  published: '2026-08-31'
+  source_repo: https://github.com/Ableton/ansible-role-jenkins-swarm-client
+  evidence: repository in github.com/Ableton, whose profile names the provider's domain
+- name: ableton
+  registry: npm
+  url: https://www.npmjs.com/package/ableton
+  language: JavaScript
+  official: false
+  version: 0.0.8
+  published: '2015-05-09'
+  evidence: 'name match only: the metadata names neither the provider''s domain nor its GitHub org'

@@ -1,0 +1,45 @@
+generated: '2026-09-22'
+method: probed
+source: pre-flight dossier (docs platform, portal detections) + CNAME chains and response headers of the hosts apis.yml names
+registry: all/0-working/vendors.yml
+areas_vocabulary:
+- documentation
+- developer-portal
+- api-gateway
+- cdn
+- hosting
+- sdk-generation
+- api-collections
+- status-page
+- support
+- community
+- identity
+- mcp-hosting
+vendors:
+- vendor: cloudflare
+  name: Cloudflare
+  area: cdn
+  host: help.ableton.com
+  evidence: header:cf-ray
+  signal: header
+  confidence: high
+  kin_score:
+  - https_enforced
+  - hsts
+- vendor: zendesk
+  name: Zendesk
+  area: support
+  host: help.ableton.com
+  evidence: cname:zendesk.com
+  signal: cname
+  confidence: high
+  kin_score:
+  - support_channel
+checked:
+- 'docs-platform: no-docs-host'
+- status.ableton.com (StatusPage)
+- www.ableton.com (Login)
+- www.ableton.com (Website)
+- help.ableton.com (Documentation)
+- www.ableton.com (GettingStarted)
+- help.ableton.com (Support)
